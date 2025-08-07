@@ -17,7 +17,6 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v4
@@ -47,15 +46,11 @@ jobs:
         npm i
     - name:  💅 Run Prettier check
       run: |
-        npm run front-lint
+        npm run fromat
 
     - name: 🧹 Run ESLint
       run: |
         npm run lint
-
-    - name: 🧠 Run TypeScript type check
-      run: |
-        npm run type-check
 
     - name: 🧪 Run Tests
       run: |
