@@ -46,7 +46,7 @@ jobs:
         npm i
     - name:  💅 Run Prettier check
       run: |
-        npm run fromat
+        npm run format
 
     - name: 🧹 Run ESLint
       run: |
